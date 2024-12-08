@@ -1,13 +1,11 @@
 package com.dev;
 
 import java.util.stream.Collectors;
-
 public class CaesarCipher {
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
     public static void main(String[] args) {
-        String encryptedText = "Wklv lv d whvw phvvdjh";
-
+        String encryptedText = "If there is no Technical Specification, then the result of the HZ";
         for (int shift = 1; shift < 26; shift++) {
             String decryptedText = decryptCaesarCipher(encryptedText, shift);
             System.out.println("Shift " + shift + ": " + decryptedText);
